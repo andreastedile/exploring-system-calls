@@ -1,11 +1,11 @@
-# Anatomia di una system call
+# Esplorando le system call
 
 In questo documento vediamo come si effettua una semplice system call in un computer con architettura Intel 64-bit e sistema operativo Linux-Ubuntu 18.04.1. Questa breve ricerca si fonda sull'analisi del file eseguibile prodotto dalla compilazione. Dapprima analizziamo il contenuto che si ottiene disassemblando un file eseguibile, e successivamente ci concentriamo su un programma Assembly.
 
 Fonti interessanti:
 
-https://youtu.be/mB79rNrpOhg
-https://youtu.be/VQAKkuLL31g
+https://youtu.be/mB79rNrpOhg  
+https://youtu.be/VQAKkuLL31g  
 https://youtu.be/BWRR3Hecjao
 
 ## Concetti preliminari

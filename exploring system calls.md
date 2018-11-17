@@ -185,8 +185,8 @@ Proviamo a cambiare il programma C invocando la funzione `write`:
 #include <unistd.h>
 int main()
 {
-  	write(1, "Hello, World!\n", 14);	//1: file descriptor, 14: byte
-    return 0;
+	write(1, "Hello, World!\n", 14);	//1: file descriptor, 14: byte
+	return 0;
 }
 ```
 
@@ -205,7 +205,7 @@ Modifichiamo nuovamente il programma C nella maniera seguente:
 #include <sys/syscall.h>
 int main()
 {
-  		syscall(SYS_write, 1, "Hello, World!\n", 14);
+	syscall(SYS_write, 1, "Hello, World!\n", 14);
     	return 0;
 }
 ```
@@ -338,7 +338,7 @@ main:
 	.section	.note.GNU-stack,"",@progbits
 ```
 
-In linea con le nostre aspettative, anche qui notiamo le istruzioni per il passaggio dei parametri, con i valori corretti.
+Anche qui, in linea con le nostre aspettative, notiamo le istruzioni per il passaggio dei parametri, con i valori corretti.
 
 ### Vi sono margini di miglioramento?
 
